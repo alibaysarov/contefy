@@ -5,11 +5,47 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="image/x-icon" rel="shortcut icon" href="@img/header/Vector.ico">
         <link rel="stylesheet" href="css/style.min.css">
         <title>@@title</title>
     </head>
 <body>
-<header>
-    <h1>Hello 123 world</h1>
-</header>
-<main>
+
+@@include('sidebar.html')
+<div class="wrapper">
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__content">
+                <div class="header__search search-input">
+                    <div class="search-input__body">
+                        <img src="@img/header/Search.svg" width="24" height="24" alt="Поиск" class="search-input__icon">
+                        <input type="text" placeholder="Поиск по услугам" class="search-input__field">
+                    </div>
+                    <!-- /.search-input__body -->
+                </div>
+                <!-- /.header__search -->
+                <div class="header__profile profile">
+                    <div class="likes">
+                        <div class="likes__body">
+                            <img src="@img/header/Heart.svg" width="24" height="24" alt="Лайки">
+                            <div class="likes__count">
+                                3
+                            </div>
+                        </div>
+                    </div>
+                    <div class="settings">
+                        <div class="settings__body">
+                            <img src="@img/header/Settings.svg" height="19" width="20" alt="Настройки" class="setting__img">
+                        </div>
+                    </div>
+                    <div class="userName">
+                        Привет Али!
+                    </div>
+                </div>
+                <!-- /.header__profile -->
+            </div>
+            <!-- /.header__content -->
+        </div>
+        <!-- /.header__container container -->
+    </header>
+</div>

@@ -1,0 +1,252 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroy-semibold.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/gilroy-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy-semibold.woff2") format("woff2"), url("../fonts/gilroy-semibold.woff") format("woff"), url("../fonts/gilroy-semibold.ttf") format("truetype"), url("../fonts/gilroy-semibold.svg#gilroy-semibold") format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter_regular.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/inter_regular.eot?#iefix") format("embedded-opentype"), url("../fonts/inter_regular.woff2") format("woff2"), url("../fonts/inter_regular.woff") format("woff"), url("../fonts/inter_regular.ttf") format("truetype"), url("../fonts/inter_regular.svg#inter_regular") format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/nunito_sans_extrabold.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/nunito_sans_extrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/nunito_sans_extrabold.woff2") format("woff2"), url("../fonts/nunito_sans_extrabold.woff") format("woff"), url("../fonts/nunito_sans_extrabold.ttf") format("truetype"), url("../fonts/nunito_sans_extrabold.svg#nunito_sans_extrabold") format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "Onest-Regular";
+  src: url("../fonts/Onest-Regular.woff2") format("woff2"), url("../fonts/Onest-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Onest-Medium";
+  src: url("../fonts/Onest-Medium.woff2") format("woff2"), url("../fonts/Onest-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Onest";
+  src: url("../fonts/Onest-Bold.woff2") format("woff2"), url("../fonts/Onest-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Onest-ExtraBold";
+  src: url("../fonts/Onest-ExtraBold.woff2") format("woff2"), url("../fonts/Onest-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-Italic.eot");
+  src: url("../fonts/PublicSans-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/PublicSans-Italic.woff2") format("woff2"), url("../fonts/PublicSans-Italic.woff") format("woff"), url("../fonts/PublicSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-Bold.eot");
+  src: url("../fonts/PublicSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PublicSans-Bold.woff2") format("woff2"), url("../fonts/PublicSans-Bold.woff") format("woff"), url("../fonts/PublicSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-Regular.eot");
+  src: url("../fonts/PublicSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PublicSans-Regular.woff2") format("woff2"), url("../fonts/PublicSans-Regular.woff") format("woff"), url("../fonts/PublicSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-ExtraBold.eot");
+  src: url("../fonts/PublicSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PublicSans-ExtraBold.woff2") format("woff2"), url("../fonts/PublicSans-ExtraBold.woff") format("woff"), url("../fonts/PublicSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroy-semibold.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/gilroy-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy-semibold.woff2") format("woff2"), url("../fonts/gilroy-semibold.woff") format("woff"), url("../fonts/gilroy-semibold.ttf") format("truetype"), url("../fonts/gilroy-semibold.svg#gilroy-semibold") format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter_regular.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/inter_regular.eot?#iefix") format("embedded-opentype"), url("../fonts/inter_regular.woff2") format("woff2"), url("../fonts/inter_regular.woff") format("woff"), url("../fonts/inter_regular.ttf") format("truetype"), url("../fonts/inter_regular.svg#inter_regular") format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/nunito_sans_extrabold.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/nunito_sans_extrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/nunito_sans_extrabold.woff2") format("woff2"), url("../fonts/nunito_sans_extrabold.woff") format("woff"), url("../fonts/nunito_sans_extrabold.ttf") format("truetype"), url("../fonts/nunito_sans_extrabold.svg#nunito_sans_extrabold") format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "Onest-Regular";
+  src: url("../fonts/Onest-Regular.woff2") format("woff2"), url("../fonts/Onest-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Onest-Medium";
+  src: url("../fonts/Onest-Medium.woff2") format("woff2"), url("../fonts/Onest-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Onest";
+  src: url("../fonts/Onest-Bold.woff2") format("woff2"), url("../fonts/Onest-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Onest-ExtraBold";
+  src: url("../fonts/Onest-ExtraBold.woff2") format("woff2"), url("../fonts/Onest-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-Italic.eot");
+  src: url("../fonts/PublicSans-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/PublicSans-Italic.woff2") format("woff2"), url("../fonts/PublicSans-Italic.woff") format("woff"), url("../fonts/PublicSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-Bold.eot");
+  src: url("../fonts/PublicSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PublicSans-Bold.woff2") format("woff2"), url("../fonts/PublicSans-Bold.woff") format("woff"), url("../fonts/PublicSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-Regular.eot");
+  src: url("../fonts/PublicSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PublicSans-Regular.woff2") format("woff2"), url("../fonts/PublicSans-Regular.woff") format("woff"), url("../fonts/PublicSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-ExtraBold.eot");
+  src: url("../fonts/PublicSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PublicSans-ExtraBold.woff2") format("woff2"), url("../fonts/PublicSans-ExtraBold.woff") format("woff"), url("../fonts/PublicSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+.container {
+  max-width: 1570px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  display: grid;
+  grid-template-columns: minmax(150px, 280px) 1fr;
+}
+
+.sidebar {
+  padding: 16px;
+  width: 100%;
+  height: 100vh;
+  background-color: #1E1566;
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+
+.header {
+  padding: 16px 30px 30px 30px;
+  padding-left: 35px;
+  padding-right: 30px;
+}
+@media (max-width: 767px) {
+  .header {
+    padding-top: calc(16px/1.5);
+    padding-bottom: calc(30px/1.5);
+  }
+}
+@media (max-width: 575px) {
+  .header {
+    padding-top: calc(16px/2);
+    padding-bottom: calc(30px/2);
+  }
+}
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .search-input {
+  width: 100%;
+  max-width: 514px;
+}
+.header .search-input__body {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding: 5px 5px 5px 14px;
+  outline: solid 1px #919EAB;
+  border-radius: 8px;
+}
+.header .search-input__body input {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-family: "Onest-Regular", sans-serif;
+  color: #919EAB;
+}
+.header .search-input__body input:focus-within .search-input__body {
+  outline: solid 2px #919EAB;
+}
+.header__profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 246px;
+}
+.header .profile .likes {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  max-width: 40px;
+  max-height: 40px;
+}
+.header .profile .likes__body {
+  position: relative;
+}
+.header .profile .likes__body div {
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  background-color: #00A6F9;
+  color: #fff;
+  font-family: "Onest-ExtraBold", sans-serif;
+  padding: 3px 2px;
+  max-width: 16px;
+  max-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(11px + 0 * ((100vw - 320px) / 1250));
+  width: 100%;
+  border-radius: 15px;
+}
+.header .profile .settings {
+  cursor: pointer;
+}
+.header .profile .userName {
+  cursor: pointer;
+  font-family: "Onest-ExtraBold", sans-serif;
+  font-size: calc(15px + 3 * ((100vw - 320px) / 1250));
+  color: #212B36;
+}

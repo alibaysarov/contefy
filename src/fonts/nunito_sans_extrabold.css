@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Nunito Sans ExtraBold';
+	src: url('../fonts/nunito_sans_extrabold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/nunito_sans_extrabold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/nunito_sans_extrabold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/nunito_sans_extrabold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/nunito_sans_extrabold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/nunito_sans_extrabold.svg#nunito_sans_extrabold') format('svg'); /* Chrome < 4, Legacy iOS */
+}

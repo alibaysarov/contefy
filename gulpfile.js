@@ -23,6 +23,7 @@ import {images} from "./gulp/tasks/images.js";
 import {svgSprive} from "./gulp/tasks/svgSprive.js";
 import {zip} from "./gulp/tasks/zip.js";
 import {ftp} from "./gulp/tasks/ftp.js";
+import {fonts2} from "./gulp/tasks/fonts2.js";
 //Наблюдатель
 function watcher(){
     gulp.watch(path.watch.files, copy);
@@ -30,11 +31,12 @@ function watcher(){
     gulp.watch(path.watch.scss, scss);
     gulp.watch(path.watch.js, js);
     gulp.watch(path.watch.images, images);
+    gulp.watch(path.watch.fonts, fonts2);
 }
 
 export {svgSprive}
 
-const mainTasks=gulp.parallel(copy,html,scss,js,images);
+const mainTasks=gulp.parallel(copy,fonts2,html,scss,js,images);
 const beforeMainTasks=gulp.parallel(copy,html,scss,js);
 //Построение сценариев для выполнения задач
 const dev=gulp.series(reset, mainTasks, gulp.parallel(watcher,server));
@@ -49,7 +51,6 @@ export {deployZIP}
 export {deployFTP}
 export{prevBuild}
 export {imgMinify}
-
 
 //Выполнение сценария
 gulp.task('default',dev);
