@@ -852,3 +852,37 @@ main {
   height: 100%;
   object-fit: cover;
 }
+
+.footer {
+  background-color: #fff;
+  padding: 32px 0px;
+}
+.footer__content {
+  margin: 0 36px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.7fr 1fr 1fr 1fr 1fr;
+}
+.footer__list {
+  display: flex;
+  gap: 25px;
+}
+.footer .footer-list__link {
+  color: #637381;
+  font-size: calc(13px + 1 * ((100vw - 320px) / 1255));
+  font-family: "Onest-Regular", sans-serif;
+}
+.footer__info {
+  grid-column: 4/6;
+  justify-self: end;
+}
+.footer__info ul {
+  display: flex;
+  gap: 40px;
+}
+.footer__info ul li {
+  white-space: nowrap;
+  color: #00FB90;
+  font-family: "Onest-Regular", sans-serif;
+  font-size: calc(11px + 1 * ((100vw - 320px) / 1255));
+}

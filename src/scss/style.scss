@@ -393,4 +393,41 @@ main{
         object-fit: cover;
     }
 }
+.footer{
+    
+    background-color: #fff;
+    padding: 32px 0px;
+    &__content{
+        margin: 0 36px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 0.7fr 1fr 1fr 1fr 1fr;
+    }
+    &__list{
+        display: flex;
+        gap:25px;
+    }
+    .footer-list{
+        &__link{
+            color: $grey;
+            @include fontSize(14,13,1575);
+            font-family: $text1;
+        }
+    }
+    &__info{
+        grid-column: 4/6;
+        justify-self: end;
+        ul{
+            display: flex;
+            gap: 40px;
+            li{
+                white-space: nowrap;
+                color: $green;
+                font-family: $text1;
+                @include fontSize(12,11,1575);
+            }
+        }
+    }
+    
+}
 @import 'media';
