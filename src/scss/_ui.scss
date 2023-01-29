@@ -1,0 +1,28 @@
+h1{
+  font-family: $bold2;
+  @include fontSize(48,36,1575);
+  color: $text;
+}
+h2{
+  font-family: $bold2;
+  @include fontSize(36,28,1575);
+  color: $text;
+}
+.markedBlue{
+  font-family: $text1;
+  color: $blue;
+  @include fontSize(12,11,1575);
+}
+.button{
+  background-color: $blue;
+  outline: none;
+  border:none;
+  border-radius:8px;
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  font-family: $bold2;
+  font-weight: bold;
+  color: #fff;
+  @include fontSize(15,13,1575);
+}
