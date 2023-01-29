@@ -13,7 +13,14 @@ h2{
   color: $blue;
   @include fontSize(12,11,1575);
 }
+h5{
+  font-family: $bold2;
+  @include fontSize(22,18,1575);
+  color: $text;
+  line-height: calc( 48px / 22px);
+}
 .button{
+  cursor: pointer;
   background-color: $blue;
   outline: none;
   border:none;
@@ -25,4 +32,8 @@ h2{
   font-weight: bold;
   color: #fff;
   @include fontSize(15,13,1575);
+  transition: opacity 0.3s ease;
+  &:hover{
+    opacity: 0.9;
+  }
 }
