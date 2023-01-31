@@ -13,6 +13,12 @@ h2{
   color: $blue;
   @include fontSize(12,11,1575);
 }
+h4{
+  font-family: $bold2;
+  @include fontSize(24,20,1575);
+  color: $text;
+  line-height: calc( 48px / 24px);
+}
 h5{
   font-family: $bold2;
   @include fontSize(22,18,1575);
@@ -35,5 +41,84 @@ h5{
   transition: opacity 0.3s ease;
   &:hover{
     opacity: 0.9;
+  }
+}
+.button-fill{
+  transition: transform 0.3s ease-out;
+  display: inline-block;
+  background-color: $blue;
+  text-decoration: none;
+  border:none;
+  outline: none;
+  padding: 6px 16px;
+  border-radius:8px;
+  color: #fff;
+  font-family: $bold2;
+  @include fontSize(14,13,1575);
+  line-height: calc(24px / 14px);
+  min-height: 36px;
+  
+  &>img.arr{
+    margin-left: 6px;
+    transform: translateY(2px);
+    transition: transform 0.3s ease-out;
+  }
+  &:hover{
+    img.arr{
+      transform: translate(3px,2px);
+    }
+  }
+  &:active{
+    transform: scale(.95);
+  }
+}
+.button-stroke{
+  transition: transform 0.3s ease-out;
+  display: inline-block;
+  border:1px solid $blue;
+  border-radius:10px;
+  text-decoration: none;
+  padding: 6px 16px;
+    border-radius:8px;
+    color: $blue;
+    font-family: $bold2;
+    @include fontSize(14,13,1575);
+    line-height: calc(24px / 14px);
+    min-height: 36px;
+    &:active{
+      transform: scale(.95);
+    }
+}
+.pagination{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__content{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  &__link{
+    color: $text;
+    font-family: $bold3;
+    @include fontSize(16,16,1575);
+    display: flex;
+    padding: 6px 10px;
+    justify-content: center; 
+    align-items: center;
+    &.current{
+      background-color: $blue;
+      color: #fff;
+      border-radius:5px;
+    }
+  }
+  &__arr{
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+    &.disabled{
+      opacity: 0.9;
+    }
   }
 }
