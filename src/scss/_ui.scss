@@ -14,16 +14,28 @@ h2{
   @include fontSize(12,11,1575);
 }
 h4{
-  font-family: $bold2;
+  font-family: $bold1;
   @include fontSize(24,20,1575);
   color: $text;
   line-height: calc( 48px / 24px);
 }
 h5{
-  font-family: $bold2;
+  font-family: $bold1;
   @include fontSize(22,18,1575);
   color: $text;
   line-height: calc( 48px / 22px);
+}
+h6{
+  font-family: $bold1;
+  @include fontSize(18,16,1575);
+  color: $text;
+  line-height: calc( 48px / 18px);
+}
+strong,b{
+  font-family: $bold1;
+  color: $text;
+  @include fontSize(18,17,1575);
+  line-height: calc(28px / 18px);
 }
 .button{
   cursor: pointer;

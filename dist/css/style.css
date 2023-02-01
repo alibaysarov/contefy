@@ -438,17 +438,31 @@ h2 {
 }
 
 h4 {
-  font-family: "Onest-Bold", sans-serif;
+  font-family: "Onest-ExtraBold", sans-serif;
   font-size: calc(20px + 4 * ((100vw - 320px) / 1255));
   color: #212B36;
   line-height: 2;
 }
 
 h5 {
-  font-family: "Onest-Bold", sans-serif;
+  font-family: "Onest-ExtraBold", sans-serif;
   font-size: calc(18px + 4 * ((100vw - 320px) / 1255));
   color: #212B36;
   line-height: 2.1818181818;
+}
+
+h6 {
+  font-family: "Onest-ExtraBold", sans-serif;
+  font-size: calc(16px + 2 * ((100vw - 320px) / 1255));
+  color: #212B36;
+  line-height: 2.6666666667;
+}
+
+strong, b {
+  font-family: "Onest-ExtraBold", sans-serif;
+  color: #212B36;
+  font-size: calc(17px + 1 * ((100vw - 320px) / 1255));
+  line-height: 1.5555555556;
 }
 
 .button {
@@ -1051,4 +1065,120 @@ main {
   font-family: "Onest-ExtraBold", sans-serif;
   color: #212B36;
   font-size: calc(17px + 1 * ((100vw - 320px) / 1255));
+}
+
+.cardInner__top {
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.cardInner__main {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+  padding: 50px;
+  padding-top: 0px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.cardInner__slider {
+  position: relative;
+}
+.cardInner__info p {
+  font-family: "Onest-Regular", sans-serif;
+  color: #212B36;
+  font-size: calc(17px + 1 * ((100vw - 320px) / 1255));
+  margin-bottom: 40px;
+}
+.cardInner__mainText {
+  display: block;
+  margin-bottom: 15px;
+}
+.cardInner__price {
+  display: flex;
+}
+.cardInner__price sup {
+  font-family: "Onest-ExtraBold", sans-serif;
+  color: #212B36;
+  font-size: calc(13px + 1 * ((100vw - 320px) / 1255));
+  line-height: 1.5;
+  display: inline-block;
+  margin-right: 3px;
+}
+.cardInner__price h4 {
+  display: inline-block;
+  margin-right: 10px;
+}
+.cardInner__price .crossedText {
+  color: #919EAB;
+  text-decoration: line-through;
+}
+.cardInner__pack ul li {
+  font-family: "Onest-Regular", sans-serif;
+  color: #212B36;
+  font-size: calc(13px + 1 * ((100vw - 320px) / 1255));
+  line-height: 1.5714285714;
+  display: block;
+  margin-bottom: 15px;
+}
+.cardInner__pack ul li svg {
+  margin-left: 8px;
+  cursor: pointer;
+}
+.cardInner__pack ul li svg path {
+  fill: #CDD2D6;
+  transition: fill 0.3s ease;
+}
+.cardInner__pack ul li svg:hover path {
+  fill: #00A6F9;
+}
+.cardInner__textContent {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  margin-bottom: 80px;
+}
+.cardInner__textContent > * {
+  margin-bottom: 50px;
+}
+.cardInner__textContent > *:last-child {
+  margin-bottom: 0px;
+}
+.cardInner__textContent p {
+  font-size: calc(15px + 1 * ((100vw - 320px) / 1255));
+  font-family: "Onest-Regular", sans-serif;
+  color: "Onest-Regular", sans-serif;
+  line-height: 1.5;
+}
+
+.slider__like {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+.slider__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider__count {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background-color: #212B36;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+.slider__count span {
+  color: #fff;
+  font-family: "Public Sans", sans-serif;
+  font-size: calc(13px + 1 * ((100vw - 320px) / 1255));
+}
+.slider__count img {
+  margin: 3px;
+  cursor: pointer;
 }
