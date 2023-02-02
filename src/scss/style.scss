@@ -671,6 +671,312 @@ main{
     
 }
 
+.step1{
+    &__top{
+        margin-bottom: 50px;
+    }
+    &__title{
+        margin-bottom: 30px;
+    }
+    .progressbar{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        max-width: 1005px;
+        &__item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__top{
+            padding: 11px;
+            margin-bottom: 23px;
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        &__line{
+            position: absolute;
+            top: 50%;
+            &.disabled{
+                background-color: $grey2;
+            }
+            &-left{
+                position: absolute;
+                top: 50%;
+                left: 0px;
+                width: 45%;
+                height: 2px;
+                background-color: $blue;
+                &.disabled{
+                    background-color: $grey2;
+                }
+            }
+            right: 0px;
+            width: 45%;
+            height: 2px;
+            background-color: $blue;
+        }
+        &__dot{
+            width: 11px;
+            height: 11px;
+            background-color: $blue;
+            border-radius: 50%;
+            &.disabled{
+                background-color: $grey2;
+            }
+        }
+    }
+    &__content{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 36px;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .step1-main{
+        background-color: #fff;
+        border-radius:10px;
+        &__header{
+            padding: 36px;
+            border-top-left-radius: 36px;
+            border-top-right-radius: 36px;
+            background-color: #fff;
+            
+        }
+    }
+    &__services{
+        &-title{
+            background-color: #f4f6f8;
+            
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+            p{
+                padding: 24px;
+                font-family: $bold1;
+                color: $grey;
+                @include fontSize(18,17,1575);
+                line-height: calc(34px / 18px);
+                &:last-child{
+                    text-align: right;
+                }
+            }
+        }
+        .order-item{
+            display: grid;
+            align-items: center;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+            &__name{
+                display: flex;
+                align-items: center;
+                padding: 24px;
+                img{
+                    margin-right: 24px;
+                }
+            }
+            &__title{
+                font-family: $boldText;
+                font-weight: 600;
+                color: $text;
+                @include fontSize(20,18,1575);
+            }
+            &__price{
+                padding: 29px 24px;
+                font-family: $text1;
+                @include fontSize(20,18,1575);
+                color: $text;
+            }
+            &__counter{
+                display: flex;
+                align-items: center;
+                max-width: 188px;
+                padding: 0 24px;
+                img{
+                    cursor: pointer;
+                }
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    /* display: none; <- Crashes Chrome on hover */
+                    -webkit-appearance: none;
+                   margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+                    }
+                input{
+                    appearance: none;
+                    -webkit-appearance: none;
+                    max-width: 45px;
+                    text-align: center;
+                    font-family: $text1;
+                    @include fontSize(20,19,1575);
+                    border:1px solid rgba(0, 0, 0, 0.01)
+                }
+            }
+            &__total{
+                text-align: right;
+                padding: 24px;
+                font-family: $text1;
+                @include fontSize(20,18,1575);
+                color: $text;
+            }
+            &__remove{
+                padding: 24px;
+                text-align: right;
+                img{
+                    cursor: pointer;
+                    transition: opacity 0.3s ease;
+                    &:hover{
+                        opacity: 0.9;
+                    }
+                }
+            }
+        }
+    }
+    .orderDetails{
+        background-color: #fff;
+        border-radius:10px;
+        padding: 34px;
+        height: 100%;
+        &__main{
+            margin-bottom: 60px;
+        }
+        &__title{
+            display: block;
+            margin-bottom: 34px;
+        }
+        &__item{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 23px;
+        }
+        &__total{
+            display: flex;
+            padding-top: 23px;
+            border-top:1px solid #eef0f3;
+            justify-content: space-between;
+        }
+        &__name{
+            text-align: left;
+            font-family: $text1;
+            color: $grey;
+            @include fontSize(20,18,1575);
+        }
+        &__value{
+            text-align: right;
+            font-family: $text1;
+            color: $text;
+            @include fontSize(20,18,1575);
+        }
+        &__promo{
+            min-height: 80px;
+            border:1px solid #eef0f3;
+            border-radius:10px;
+            display: flex;
+            // flex-basis: 418px;
+            align-items: stretch;
+            input{
+                padding: 0 5px;
+                display: flex;
+                flex-basis: 75%;
+                max-width: 300px;
+                font-size: 50px;
+                font-family: $bold1;
+                color: $grey2;
+                border:none;
+            }
+            button{
+                display: flex;
+                flex-basis: 25%;
+                background-color:transparent;
+                border:none;
+                outline: none;
+                align-items: center;
+                cursor: pointer;
+                span{
+                    font-family: $bold3;
+                    font-weight: 700;
+                    color: $text;
+                    @include fontSize(20,18,1575);
+                }
+            }
+        }
+    }
+    .step1-data{
+        padding: 50px;
+        background-color: #fff;
+        border-radius:5px;
+        &__title{
+            margin-bottom: 40px;
+        }
+        &__content{
+            display: grid;
+            grid-gap: 40px;
+            grid-template-columns: 1fr 1fr;
+        }
+        &__select{
+            &_lg{
+                grid-column: 1/3;
+            }
+            
+            
+            background-color: rgba($color: $lightgrey, $alpha: 0.08);
+            padding: 11px 13px;            
+            width: 100%;
+            border-radius:11px;
+            position: relative;
+            span{
+                display: block;
+                font-family: $text;
+                @include fontSize(13,12,1575);
+                color: $grey;
+                margin-bottom: 10px;
+                margin-left: 5px;
+            }
 
+            img{
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: transform 0.3s ease;
+            }
+            select,input{
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                border:none;
+                cursor: pointer;
+                color: $text;
+                font-family: $text1;
+                @include fontSize(18,17,1575);
+                padding: 5px;
+                appearance:none;
+                background: transparent;
+                img+&:active{
+                    transform: translateY(-50%) rotate(180deg);
+                }
+            }
+            input{
+                cursor:auto;
+                
+            }
+        }
+        &__button{
+            grid-column: 2/3;  
+            button{
+                width: 100%;
+                cursor: pointer;
+                padding: 20px;
+                font-family: $bold2;
+                font-weight: 700;
+                @include fontSize(18,17,1575);
+            }
+        }
+        &__inputs{
+            display: grid;
+            grid-gap: 40px;
+            grid-template-columns: 1fr 1fr;
+        }
+
+    }
+}
 
 @import 'media';

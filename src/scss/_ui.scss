@@ -13,6 +13,12 @@ h2{
   color: $blue;
   @include fontSize(12,11,1575);
 }
+h3{
+  font-family: $bold1;
+  @include fontSize(25,21,1575);
+  color: $text;
+  line-height: calc( 50px / 25px);
+}
 h4{
   font-family: $bold1;
   @include fontSize(24,20,1575);
@@ -133,4 +139,10 @@ strong,b{
       opacity: 0.9;
     }
   }
+}
+.disabled{
+  background-color: $grey2;
+}
+.blueText{
+  color: $blue;
 }
